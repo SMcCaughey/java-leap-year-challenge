@@ -2,8 +2,6 @@ import java.util.ArrayList;
 
 public class LeapYear {
 
-     static String  hi = "hello";
-
     public Boolean calculate(Integer year){
         if(year < 1){return false;}
         if(year % 400 == 0){
@@ -43,12 +41,12 @@ public class LeapYear {
     public static void main (String[] args){
         LeapYear test = new LeapYear();
 
-//        Integer count = 0;
-//        while(count <= 12){
-//            System.out.printf("Is %d a leap year: %s%n",count, test.calculate(count));
-//            count++;
-//        }
-       // System.out.println(test.leapYearsBetween(1990,2010).toString());
+        Integer count = 0;
+        while(count <= 12){
+            System.out.printf("Is %d a leap year: %s%n",count, test.calculate(count));
+            count++;
+        }
+        System.out.println(test.leapYearsBetween(1990,2010).toString());
         System.out.println(test.closestLeapYearTo(2002));
 
     }
